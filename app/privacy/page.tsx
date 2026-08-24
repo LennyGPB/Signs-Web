@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-white px-6 py-16">
@@ -22,7 +23,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-white text-lg font-semibold mb-3">1. Introduction</h2>
             <p>
-              Signs ("we", "our", "the app") is a personal development application for manifestation and daily rituals. This Privacy Policy explains how we collect, use, and protect your personal data when you use our app.
+              Signs (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;the app&rdquo;) is a personal development application for manifestation and daily rituals. This Privacy Policy explains how we collect, use, and protect your personal data when you use our app.
             </p>
           </section>
 

@@ -20,7 +20,7 @@ export default function DeleteAccountPage() {
             To permanently delete your Signs account and all associated data
             (manifestations, rituals, posts, subscriptions), send an email to
             the address below with the subject line{" "}
-            <span className="text-white font-medium">"Delete my account"</span>{" "}
+            <span className="text-white font-medium">&ldquo;Delete my account&rdquo;</span>{" "}
             and include the email address linked to your account.
           </p>
 
