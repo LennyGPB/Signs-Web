@@ -54,7 +54,7 @@ body {
   background-image:
     linear-gradient(to top, #0a0a0a 0%, rgba(10, 10, 10, 0) 35%),
     linear-gradient(90deg, rgba(10, 10, 10, .78) 0%, rgba(10, 10, 10, .59) 50%, rgba(10, 10, 10, .31) 100%),
-    url("/backsign3.png");
+    url("/backsign8.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,6 +284,14 @@ body {
 }
 
 @media (max-width: 767px) {
+  .pillars-repeat:nth-of-type(3) {
+    opacity: .2 !important;
+  }
+
+  .pillars-repeat:nth-of-type(4) {
+    opacity: .05 !important;
+  }
+
   .hero-discord-cta {
     min-height: 68px;
     gap: 10px;
@@ -295,8 +303,8 @@ body {
     background-image:
       linear-gradient(to top, #0a0a0a 0%, rgba(10, 10, 10, 0) 42%),
       linear-gradient(90deg, rgba(10, 10, 10, .8), rgba(10, 10, 10, .48)),
-      url("/backsign3.png");
-    background-position: center, center, 40% center;
+      url("/backsign8.png");
+    background-position: center, center, 70% center;
   }
 
   .hero-editorial::after {

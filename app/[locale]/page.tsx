@@ -28,7 +28,7 @@ export default function Home() {
             <span className="block font-thin tracking-tight">{t("heroTitleLine3")}</span>
           </h1>
 
-          <p className="mt-8 max-w-xl text-sm leading-6 text-white/65 sm:text-base sm:leading-7">
+          <p className="mt-8 max-w-xl text-xs leading-6 text-white/65 sm:text-base sm:leading-7">
             <strong className="font-semibold text-white">{t("heroDescriptionBold")}</strong>{" "}
             {t("heroDescriptionRest")}
           </p>
@@ -84,8 +84,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Fonctionnalités — accordéon 01 à 08 */}
+      {/* La Méthode — accordéon 01 à 08 */}
       <section id="fonctionnalites" className="relative mx-auto max-w-6xl px-6 pt-8 md:px-10 md:pt-0">
+        <h2 className="pillars-title mb-8 flex flex-nowrap items-baseline gap-3 text-3xl text-white sm:text-4xl md:mb-12 md:text-5xl">
+          <span className="shrink-0 font-thin tracking-tight">{t("pillarsTitlePrefix")}</span>
+          {Array.from({ length: 20 }).map((_, i) => (
+            <span
+              key={i}
+              className="pillars-repeat shrink-0 font-candal italic"
+              style={{ opacity: Math.max(0.02, 1 - i * 0.4) }}
+            >
+              {t("pillarsTitleWord")}
+            </span>
+          ))}
+        </h2>
         <AccordionFeatures />
       </section>
 
