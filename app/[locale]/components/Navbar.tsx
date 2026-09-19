@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useEffect, useRef, useState } from "react";
+import { DISCORD_URL } from "@/lib/constants";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
@@ -73,7 +74,7 @@ export default function Navbar() {
           </nav>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 md:flex md:w-auto md:items-center md:gap-3">
+        <div className="grid grid-cols-3 gap-2 md:flex md:w-auto md:items-center md:gap-3">
           <Link
             href="#commencer"
             className="whitespace-nowrap rounded-full border border-white/40 px-2 py-2 text-center text-[9px] uppercase tracking-[0.06em] text-white/70 transition hover:border-white hover:text-white sm:px-4 sm:text-[11px] sm:tracking-[0.08em]"
@@ -86,6 +87,14 @@ export default function Navbar() {
           >
             {t("downloadApp")}
           </Link>
+          <a
+            href={DISCORD_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="whitespace-nowrap rounded-full border border-[#5865F2]/50 px-2 py-2 text-center text-[9px] uppercase tracking-[0.06em] text-[#c9ccff] transition hover:border-[#5865F2] hover:text-white sm:px-4 sm:text-[11px] sm:tracking-[0.08em]"
+          >
+            {t("joinDiscord")}
+          </a>
         </div>
         </div>
 
@@ -107,9 +116,16 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="mt-3 grid gap-2 border-t border-white/15 pt-4">
-            {[t("downloadEbook"), t("downloadApp")].map((label) => (
-              <Link key={label} href="#commencer" className="flex min-h-11 items-center justify-center rounded-full border border-white/40 px-4 py-3 text-center text-sm text-white/85 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">{label}</Link>
-            ))}
+            <Link href="#commencer" className="flex min-h-11 items-center justify-center rounded-full border border-white/40 px-4 py-3 text-center text-sm text-white/85 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">{t("downloadEbook")}</Link>
+            <Link href="#commencer" className="flex min-h-11 items-center justify-center rounded-full border border-white/40 px-4 py-3 text-center text-sm text-white/85 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">{t("downloadApp")}</Link>
+            <a
+              href={DISCORD_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="flex min-h-11 items-center justify-center rounded-full border border-[#5865F2]/50 px-4 py-3 text-center text-sm text-[#c9ccff] hover:border-[#5865F2] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5865F2]"
+            >
+              {t("joinDiscord")}
+            </a>
           </div>
         </nav>
       </header>
