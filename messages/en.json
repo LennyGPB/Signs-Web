@@ -1,0 +1,179 @@
+{
+  "Metadata": {
+    "title": "Signs",
+    "description": "Manifest with method, not by chance."
+  },
+  "Navbar": {
+    "home": "Home",
+    "features": "Features",
+    "support": "Support",
+    "downloadEbook": "Download the E-Book",
+    "downloadApp": "Download the app",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileNavLabel": "Main navigation"
+  },
+  "Home": {
+    "heroTitleLine1": "MANIFEST",
+    "heroTitleLine2Prefix": "WITH",
+    "heroTitleMethod": "METHOD",
+    "heroTitleLine3": "NOT BY CHANCE.",
+    "heroDescriptionBold": "The complete guide",
+    "heroDescriptionRest": "to structure your intentions and transform 8 areas of your life: proven techniques, guided exercises, a daily ritual.",
+    "heroCta": "Download the E-Book - €17",
+    "appIntroBadge": "SIGNS - Mobile app coming soon!",
+    "appIntroHeading": "Your method, with you every day.",
+    "availableOn": "Available on",
+    "appStore": "App Store",
+    "playStore": "Play Store",
+    "finalCta": "Get started now",
+    "footerTagline": "Manifest with method, not by chance.",
+    "footerProduct": "Product",
+    "footerFeatures": "Features",
+    "footerSupport": "Support",
+    "footerHelp": "Help",
+    "footerDeleteAccount": "Delete my account",
+    "footerLegal": "Legal",
+    "footerPrivacy": "Privacy",
+    "footerTerms": "Terms of use",
+    "footerCopyright": "© {year} Signs. All rights reserved.",
+    "footerMadeWith": "Made with method."
+  },
+  "Features": [
+    {
+      "title": "Money",
+      "lead": "Your relationship with money, clarified — not just \"more money\".",
+      "body": "Many financial blocks don't come from a lack of strategy, but from an unconscious relationship with money that's never been questioned. We start by working on what you actually believe, before setting a concrete, measurable intention."
+    },
+    {
+      "title": "Love",
+      "lead": "Becoming the version of you that makes the relationship possible.",
+      "body": "Manifesting in love doesn't mean attracting one specific person — it means identifying the pattern that's still keeping that relationship from happening, and defusing it, instead of focusing solely on the other person."
+    },
+    {
+      "title": "Career",
+      "lead": "A clear definition of what you're really looking for.",
+      "body": "The block rarely comes from a lack of skill — it comes from a fuzzy ambition: status, freedom, impact, or security. We help you name precisely what \"success\" means for you, without other people's gaze."
+    },
+    {
+      "title": "Confidence",
+      "lead": "Built through proof, not repetition alone.",
+      "body": "Every promise you keep to yourself reinforces internal proof; every promise you break reinforces the opposite. Confidence is built through small, chosen, concrete proof — not through affirmations repeated into thin air."
+    },
+    {
+      "title": "Body & Health",
+      "lead": "Listening to your body, not just disciplining it.",
+      "body": "This area often escapes manifestation altogether, reduced to sheer discipline. Yet your relationship with your body — gratitude or frustration — always precedes the physical result you're after."
+    },
+    {
+      "title": "Creativity",
+      "lead": "Recreating the space where inspiration returns.",
+      "body": "Creativity is almost never missing because of a lack of ideas, but because of a lack of space, time, silence, and permission to create without judging. We work on the conditions, not on forcing it."
+    },
+    {
+      "title": "Lifestyle",
+      "lead": "A daily life aligned with the life you're aiming for.",
+      "body": "This is the most often neglected area, yet a poorly aligned lifestyle drains the energy needed to move forward in every other area. Here, we examine your actual days, not the ones you dream about."
+    },
+    {
+      "title": "Spirituality",
+      "lead": "A stable inner space, with no dogma imposed.",
+      "body": "No religious framework needed — just one simple question: what are you connected to. This area isn't about obtaining something, but about cultivating an inner space stable enough for everything else to anchor into."
+    }
+  ],
+  "Support": {
+    "subtitle": "Support",
+    "heading": "How can we help?",
+    "description": "Send us your question or describe the issue you encountered. Our support team will reply by email.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "sendButton": "Send message",
+    "sendingButton": "Sending…",
+    "successMessage": "Your message has been sent. We’ll get back to you soon.",
+    "errorMessage": "The message could not be sent. Please try again or email us at gleam-pro@proton.me.",
+    "copyright": "© {year} Signs. All rights reserved."
+  },
+  "Privacy": {
+    "subtitle": "Privacy Policy",
+    "lastUpdated": "Last updated: {date}",
+    "s1Title": "1. Introduction",
+    "s1Body": "Signs (\"we\", \"our\", \"the app\") is a personal development application for manifestation and daily rituals. This Privacy Policy explains how we collect, use, and protect your personal data when you use our app.",
+    "s2Title": "2. Data we collect",
+    "s2Item1Label": "Account information",
+    "s2Item1": "email address, first name/username",
+    "s2Item2Label": "App content",
+    "s2Item2": "manifestations, daily rituals, posts, visualisation sessions, exercises you create within the app",
+    "s2Item3Label": "Usage data",
+    "s2Item3": "streaks, completed rituals, weekly reviews",
+    "s2Item4Label": "Purchase information",
+    "s2Item4": "subscription status managed via RevenueCat (we do not store payment card details)",
+    "s2Item5Label": "Device token",
+    "s2Item5": "push notification token to send ritual reminders",
+    "s3Title": "3. How we use your data",
+    "s3Item1": "Provide and personalise the app experience",
+    "s3Item2": "Generate AI-powered content based on your manifestations (via OpenAI)",
+    "s3Item3": "Send push notifications for ritual reminders and future letters",
+    "s3Item4": "Manage your Premium subscription",
+    "s3Item5": "Improve the app",
+    "s4Title": "4. Third-party services",
+    "s4Item1Label": "OpenAI",
+    "s4Item1": "generates personalised content (manifestations, rituals, visualisations). Your data is processed according to",
+    "s4Item1Link": "OpenAI's privacy policy",
+    "s4Item2Label": "RevenueCat",
+    "s4Item2": "manages in-app subscriptions. See",
+    "s4Item2Link": "RevenueCat's privacy policy",
+    "s4Item3Label": "Expo / EAS",
+    "s4Item3": "push notification delivery.",
+    "s4Item4Label": "Neon (PostgreSQL)",
+    "s4Item4": "secure database hosting.",
+    "s4Item5Label": "Railway",
+    "s4Item5": "backend hosting.",
+    "s5Title": "5. Data retention",
+    "s5Body": "Your data is retained as long as your account is active. You can request deletion of your account and all associated data at any time.",
+    "s6Title": "6. Your rights",
+    "s6Item1": "Access your personal data",
+    "s6Item2": "Correct inaccurate data",
+    "s6Item3": "Request deletion of your account and data",
+    "s6Item4": "Withdraw consent at any time",
+    "s7Title": "7. Data deletion",
+    "s7Body": "To delete your account and all associated data, visit:",
+    "s7BodyEnd": ". Requests are processed within 30 days.",
+    "s8Title": "8. Security",
+    "s8Body": "All data is transmitted over HTTPS. Passwords are hashed using bcrypt. We do not sell your personal data to third parties.",
+    "s9Title": "9. Contact",
+    "s9Body": "For any privacy-related questions:",
+    "copyright": "© {year} Signs. All rights reserved."
+  },
+  "Terms": {
+    "subtitle": "Terms of Use",
+    "lastUpdated": "Last updated: 24 August 2026",
+    "s1Title": "1. The service",
+    "s1Body": "Signs provides personal-development tools, guided rituals, visualisation exercises, journaling features, and AI-generated suggestions. The service is intended for personal reflection and does not provide medical, psychological, legal, or financial advice.",
+    "s2Title": "2. Your account",
+    "s2Body": "You are responsible for keeping your credentials secure and for the activity on your account. You must provide accurate information and use the service lawfully. You can permanently delete your account and associated data from the app settings.",
+    "s3Title": "3. Subscriptions",
+    "s3Body": "Premium subscriptions are billed through the Apple App Store or Google Play. Prices, billing periods, trials, and renewal terms are displayed by the store before purchase. Subscriptions renew automatically unless cancelled through your store account before the renewal date. Deleting your Signs account does not automatically cancel a store subscription.",
+    "s4Title": "4. Generated content",
+    "s4Body": "AI-generated content may occasionally be incomplete or inaccurate. You remain responsible for deciding whether and how to use it. Do not submit unlawful content or information you are not authorised to share.",
+    "s5Title": "5. Availability",
+    "s5Body": "We may update, suspend, or modify features to maintain and improve the service. We do not guarantee uninterrupted availability, but we work to restore service promptly when incidents occur.",
+    "s6Title": "6. Privacy",
+    "s6Body": "Our handling of personal data is described in our",
+    "s6Link": "Privacy Policy",
+    "s7Title": "7. Contact",
+    "s7Body": "Questions about these terms can be sent to",
+    "copyright": "© {year} Signs. All rights reserved."
+  },
+  "DeleteAccount": {
+    "subtitle": "Data Deletion Request",
+    "heading": "Delete your account & data",
+    "description": "To permanently delete your Signs account and all associated data (manifestations, rituals, posts, subscriptions), send an email to the address below with the subject line",
+    "descriptionSubject": "\"Delete my account\"",
+    "descriptionEnd": "and include the email address linked to your account.",
+    "sendEmail": "Send email →",
+    "note1": "Requests are processed within 30 days. Once deleted, your data cannot be recovered.",
+    "note2": "If you have an active Premium subscription, please cancel it before requesting deletion.",
+    "copyright": "© {year} Signs. All rights reserved."
+  }
+}

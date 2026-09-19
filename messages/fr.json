@@ -1,0 +1,179 @@
+{
+  "Metadata": {
+    "title": "Signs",
+    "description": "Manifeste avec méthode, pas par hasard."
+  },
+  "Navbar": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "support": "Support",
+    "downloadEbook": "Télécharger le E-Book",
+    "downloadApp": "Télécharger l'application",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mobileNavLabel": "Navigation principale"
+  },
+  "Home": {
+    "heroTitleLine1": "MANIFESTE",
+    "heroTitleLine2Prefix": "AVEC",
+    "heroTitleMethod": "MÉTHODE",
+    "heroTitleLine3": "PAS PAR HASARD.",
+    "heroDescriptionBold": "Le guide complet",
+    "heroDescriptionRest": "pour structurer tes intentions et transformer 8 domaines de ta vie : techniques éprouvées, exercices guidés, rituel quotidien.",
+    "heroCta": "Télécharger le E-Book - 17 €",
+    "appIntroBadge": "SIGNS - Application mobile bientôt disponible !",
+    "appIntroHeading": "Ta méthode, chaque jour avec toi.",
+    "availableOn": "Disponible sur",
+    "appStore": "App Store",
+    "playStore": "Play Store",
+    "finalCta": "Commence maintenant",
+    "footerTagline": "Manifeste avec méthode, pas par hasard.",
+    "footerProduct": "Produit",
+    "footerFeatures": "Fonctionnalités",
+    "footerSupport": "Support",
+    "footerHelp": "Aide",
+    "footerDeleteAccount": "Supprimer mon compte",
+    "footerLegal": "Légal",
+    "footerPrivacy": "Confidentialité",
+    "footerTerms": "Conditions d'utilisation",
+    "footerCopyright": "© {year} Signs. Tous droits réservés.",
+    "footerMadeWith": "Fait avec méthode."
+  },
+  "Features": [
+    {
+      "title": "Argent",
+      "lead": "Ta relation à l'argent, clarifiée, pas juste \"plus d'argent\".",
+      "body": "Beaucoup de blocages financiers ne viennent pas d'un manque de stratégie, mais d'une relation inconsciente à l'argent, jamais interrogée. On travaille d'abord ce que tu crois vraiment, avant de poser une intention concrète et mesurable."
+    },
+    {
+      "title": "Amour",
+      "lead": "Devenir la version de toi qui rend la relation possible.",
+      "body": "Manifester en amour ne veut pas dire attirer une personne précise, mais identifier le schéma qui empêche encore cette relation d'arriver, et le désamorcer, plutôt que de se concentrer uniquement sur l'autre."
+    },
+    {
+      "title": "Carrière",
+      "lead": "Une définition claire de ce que tu cherches vraiment.",
+      "body": "Le blocage vient rarement d'un manque de compétence, il vient d'une ambition floue, statut, liberté, impact ou sécurité. On t'aide à nommer précisément ce que \"réussir\" signifie pour toi, sans le regard des autres."
+    },
+    {
+      "title": "Confiance",
+      "lead": "Construite par la preuve, pas par la répétition seule.",
+      "body": "Chaque promesse tenue envers toi même renforce une preuve interne, chaque promesse brisée renforce l'inverse. La confiance se construit par petites preuves concrètes et choisies, pas par une affirmation répétée dans le vide."
+    },
+    {
+      "title": "Corps & Santé",
+      "lead": "Écouter ton corps, pas seulement le discipliner.",
+      "body": "Ce domaine échappe souvent à la manifestation, réduit à la seule discipline. Pourtant ta relation au corps, gratitude ou frustration, précède toujours le résultat physique que tu recherches."
+    },
+    {
+      "title": "Créativité",
+      "lead": "Recréer l'espace où l'inspiration revient.",
+      "body": "La créativité ne manque presque jamais par absence d'idées, mais par manque d'espace, de temps, de silence, de permission de produire sans juger. On travaille les conditions, pas la contrainte."
+    },
+    {
+      "title": "Lifestyle",
+      "lead": "Un quotidien aligné avec la vie que tu vises.",
+      "body": "C'est le domaine le plus souvent négligé, pourtant un cadre de vie mal aligné épuise l'énergie nécessaire pour avancer dans tous les autres domaines. Ici, on interroge tes journées réelles, pas celles dont tu rêves."
+    },
+    {
+      "title": "Spiritualité",
+      "lead": "Un espace intérieur stable, sans dogme imposé.",
+      "body": "Pas besoin de cadre religieux, juste une question simple, à quoi te relies tu. Ce domaine ne s'agit pas d'obtenir quelque chose, mais de cultiver un espace intérieur assez stable pour que tout le reste s'y ancre."
+    }
+  ],
+  "Support": {
+    "subtitle": "Support",
+    "heading": "Comment pouvons-nous vous aider ?",
+    "description": "Envoyez-nous votre question ou décrivez le problème rencontré. Notre équipe support vous répondra par e-mail.",
+    "nameLabel": "Nom",
+    "emailLabel": "E-mail",
+    "messageLabel": "Message",
+    "sendButton": "Envoyer le message",
+    "sendingButton": "Envoi en cours…",
+    "successMessage": "Votre message a été envoyé. Nous vous répondrons bientôt.",
+    "errorMessage": "Le message n'a pas pu être envoyé. Veuillez réessayer ou nous écrire à gleam-pro@proton.me.",
+    "copyright": "© {year} Signs. Tous droits réservés."
+  },
+  "Privacy": {
+    "subtitle": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : {date}",
+    "s1Title": "1. Introduction",
+    "s1Body": "Signs (« nous », « notre », « l'application ») est une application de développement personnel dédiée à la manifestation et aux rituels quotidiens. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous utilisez notre application.",
+    "s2Title": "2. Données que nous collectons",
+    "s2Item1Label": "Informations de compte",
+    "s2Item1": "adresse e-mail, prénom/nom d'utilisateur",
+    "s2Item2Label": "Contenu de l'application",
+    "s2Item2": "manifestations, rituels quotidiens, publications, séances de visualisation, exercices que tu crées dans l'application",
+    "s2Item3Label": "Données d'utilisation",
+    "s2Item3": "séries (streaks), rituels complétés, bilans hebdomadaires",
+    "s2Item4Label": "Informations d'achat",
+    "s2Item4": "statut de l'abonnement géré via RevenueCat (nous ne stockons pas les détails de ta carte bancaire)",
+    "s2Item5Label": "Jeton d'appareil",
+    "s2Item5": "jeton de notification push pour envoyer les rappels de rituels",
+    "s3Title": "3. Comment nous utilisons tes données",
+    "s3Item1": "Fournir et personnaliser l'expérience de l'application",
+    "s3Item2": "Générer du contenu par IA basé sur tes manifestations (via OpenAI)",
+    "s3Item3": "Envoyer des notifications push pour les rappels de rituels et les lettres futures",
+    "s3Item4": "Gérer ton abonnement Premium",
+    "s3Item5": "Améliorer l'application",
+    "s4Title": "4. Services tiers",
+    "s4Item1Label": "OpenAI",
+    "s4Item1": "génère du contenu personnalisé (manifestations, rituels, visualisations). Tes données sont traitées conformément à",
+    "s4Item1Link": "la politique de confidentialité d'OpenAI",
+    "s4Item2Label": "RevenueCat",
+    "s4Item2": "gère les abonnements intégrés à l'application. Voir",
+    "s4Item2Link": "la politique de confidentialité de RevenueCat",
+    "s4Item3Label": "Expo / EAS",
+    "s4Item3": "envoi des notifications push.",
+    "s4Item4Label": "Neon (PostgreSQL)",
+    "s4Item4": "hébergement sécurisé de la base de données.",
+    "s4Item5Label": "Railway",
+    "s4Item5": "hébergement du backend.",
+    "s5Title": "5. Conservation des données",
+    "s5Body": "Tes données sont conservées tant que ton compte est actif. Tu peux demander la suppression de ton compte et de toutes les données associées à tout moment.",
+    "s6Title": "6. Tes droits",
+    "s6Item1": "Accéder à tes données personnelles",
+    "s6Item2": "Corriger des données inexactes",
+    "s6Item3": "Demander la suppression de ton compte et de tes données",
+    "s6Item4": "Retirer ton consentement à tout moment",
+    "s7Title": "7. Suppression des données",
+    "s7Body": "Pour supprimer ton compte et toutes les données associées, rends-toi sur :",
+    "s7BodyEnd": ". Les demandes sont traitées sous 30 jours.",
+    "s8Title": "8. Sécurité",
+    "s8Body": "Toutes les données sont transmises via HTTPS. Les mots de passe sont hachés avec bcrypt. Nous ne vendons pas tes données personnelles à des tiers.",
+    "s9Title": "9. Contact",
+    "s9Body": "Pour toute question relative à la confidentialité :",
+    "copyright": "© {year} Signs. Tous droits réservés."
+  },
+  "Terms": {
+    "subtitle": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour : 24 août 2026",
+    "s1Title": "1. Le service",
+    "s1Body": "Signs propose des outils de développement personnel, des rituels guidés, des exercices de visualisation, des fonctionnalités de journal et des suggestions générées par IA. Le service est destiné à la réflexion personnelle et ne fournit pas de conseils médicaux, psychologiques, juridiques ou financiers.",
+    "s2Title": "2. Ton compte",
+    "s2Body": "Tu es responsable de la sécurité de tes identifiants et de l'activité sur ton compte. Tu dois fournir des informations exactes et utiliser le service de manière licite. Tu peux supprimer définitivement ton compte et les données associées depuis les paramètres de l'application.",
+    "s3Title": "3. Abonnements",
+    "s3Body": "Les abonnements Premium sont facturés via l'Apple App Store ou Google Play. Les prix, périodes de facturation, essais et conditions de renouvellement sont affichés par le store avant l'achat. Les abonnements se renouvellent automatiquement sauf annulation via ton compte store avant la date de renouvellement. Supprimer ton compte Signs n'annule pas automatiquement un abonnement souscrit via le store.",
+    "s4Title": "4. Contenu généré",
+    "s4Body": "Le contenu généré par IA peut occasionnellement être incomplet ou inexact. Tu restes responsable de décider si et comment l'utiliser. Ne soumets pas de contenu illicite ou d'informations que tu n'es pas autorisé à partager.",
+    "s5Title": "5. Disponibilité",
+    "s5Body": "Nous pouvons mettre à jour, suspendre ou modifier des fonctionnalités afin de maintenir et d'améliorer le service. Nous ne garantissons pas une disponibilité ininterrompue, mais nous nous efforçons de rétablir le service rapidement en cas d'incident.",
+    "s6Title": "6. Confidentialité",
+    "s6Body": "Le traitement de tes données personnelles est décrit dans notre",
+    "s6Link": "politique de confidentialité",
+    "s7Title": "7. Contact",
+    "s7Body": "Toute question concernant ces conditions peut être envoyée à",
+    "copyright": "© {year} Signs. Tous droits réservés."
+  },
+  "DeleteAccount": {
+    "subtitle": "Demande de suppression des données",
+    "heading": "Supprimer ton compte et tes données",
+    "description": "Pour supprimer définitivement ton compte Signs et toutes les données associées (manifestations, rituels, publications, abonnements), envoie un e-mail à l'adresse ci-dessous avec pour objet",
+    "descriptionSubject": "« Delete my account »",
+    "descriptionEnd": "et indique l'adresse e-mail liée à ton compte.",
+    "sendEmail": "Envoyer un e-mail →",
+    "note1": "Les demandes sont traitées sous 30 jours. Une fois supprimées, tes données ne peuvent pas être récupérées.",
+    "note2": "Si tu as un abonnement Premium actif, merci de l'annuler avant de demander la suppression.",
+    "copyright": "© {year} Signs. Tous droits réservés."
+  }
+}
