@@ -2,10 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { useTranslations } from "next-intl";
-
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ??
-  "https://signs-api-production.up.railway.app/api";
+import Navbar from "../components/Navbar";
 
 export default function SupportPage() {
   const t = useTranslations("Support");
@@ -19,7 +16,7 @@ export default function SupportPage() {
     const form = event.currentTarget;
     const data = new FormData(form);
     try {
-      const response = await fetch(`${API_URL}/support`, {
+      const response = await fetch("/api/support", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -37,27 +34,24 @@ export default function SupportPage() {
   }
 
   const fieldClass =
-    "mt-2 w-full rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#B8A5FF]/50";
+    "mt-2 w-full rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#B8A5FF]/50 focus:bg-white/[0.06]";
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-white flex flex-col items-center justify-center px-6 py-16">
-      <div className="max-w-lg w-full">
-        <div className="mb-12 text-center">
-          <h1 className="font-candal text-4xl tracking-tight">Signs</h1>
-          <p className="text-white/40 text-sm mt-2 tracking-widest uppercase">
-            {t("subtitle")}
-          </p>
+    <main className="support-page relative min-h-screen overflow-hidden bg-[#0A0A0A] px-6 pb-16 pt-36 text-white md:pt-44">
+      <Navbar />
+      <div className="support-glow" aria-hidden="true" />
+
+      <div className="relative z-10 mx-auto w-full max-w-lg">
+        <div className="mb-8 text-center">
+          <p className="text-[11px] uppercase tracking-[0.24em] text-[#B8A5FF]">{t("subtitle")}</p>
+          <h1 className="mt-3 font-candal text-3xl sm:text-4xl">{t("heading")}</h1>
+          <p className="mt-4 text-sm leading-6 text-white/55">{t("description")}</p>
         </div>
 
         <form
           onSubmit={submit}
-          className="rounded-3xl border border-white/10 bg-white/[0.03] p-8"
+          className="support-card rounded-[28px] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-2xl sm:p-9"
         >
-          <h2 className="text-xl font-semibold mb-3">{t("heading")}</h2>
-          <p className="text-white/50 text-sm leading-7 mb-6">
-            {t("description")}
-          </p>
-
           <label className="block text-sm text-white/70">
             {t("nameLabel")}
             <input
@@ -95,7 +89,8 @@ export default function SupportPage() {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="mt-6 w-full rounded-2xl border border-[#B8A5FF]/30 bg-[#B8A5FF]/10 px-5 py-4 text-sm font-medium text-[#B8A5FF] transition-colors hover:bg-[#B8A5FF]/15 disabled:cursor-wait disabled:opacity-50"
+            aria-busy={status === "sending"}
+            className="support-submit mt-6 w-full"
           >
             {status === "sending" ? t("sendingButton") : t("sendButton")}
           </button>

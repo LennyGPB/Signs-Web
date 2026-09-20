@@ -22,6 +22,7 @@
     "heroDescriptionBold": "The complete guide",
     "heroDescriptionRest": "to structure your intentions and transform 8 areas of your life: proven techniques, guided exercises, a daily ritual.",
     "heroCta": "Download the E-Book - €17",
+    "heroReassurance": "100% secure payment (Stripe) · Instant access",
     "heroDiscordCta": "Join the Discord",
     "pillarsTitlePrefix": "The 8",
     "pillarsTitleWord": "pillars",
@@ -30,7 +31,9 @@
     "availableOn": "Available on",
     "appStore": "App Store",
     "playStore": "Play Store",
-    "finalCta": "Get started now",
+    "communityTitlePrefix": "Join the",
+    "communityTitleWord": "community",
+    "communityDescription": "Connect with people manifesting with method: share your rituals, ask your questions, and follow the app's development before anyone else.",
     "footerTagline": "Manifest with method, not by chance.",
     "footerProduct": "Product",
     "footerFeatures": "The Method",
@@ -42,6 +45,13 @@
     "footerTerms": "Terms of use",
     "footerCopyright": "© {year} Signs. All rights reserved.",
     "footerMadeWith": "Made with method."
+  },
+  "Success": {
+    "eyebrow": "Payment confirmed",
+    "title": "Thank you for your purchase!",
+    "description": "Your payment was received. Click below to download your e-book.",
+    "downloadCta": "Download the e-book",
+    "backHome": "Back to home"
   },
   "Features": [
     {

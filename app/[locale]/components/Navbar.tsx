@@ -2,20 +2,22 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useEffect, useRef, useState } from "react";
 import { DISCORD_URL } from "@/lib/constants";
+import BuyEbookButton from "./BuyEbookButton";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   const NAV_LINKS = [
-    { label: t("home"), href: "/", active: true },
+    { label: t("home"), href: "/", active: pathname === "/" },
     { label: t("features"), href: "#fonctionnalites", active: false },
-    { label: t("support"), href: "/support", active: false },
+    { label: t("support"), href: "/support", active: pathname === "/support" },
   ];
 
   useEffect(() => {
@@ -75,12 +77,9 @@ export default function Navbar() {
         </div>
 
         <div className="grid grid-cols-3 gap-2 md:flex md:w-auto md:items-center md:gap-3">
-          <Link
-            href="#commencer"
-            className="whitespace-nowrap rounded-full border border-white/40 px-2 py-2 text-center text-[9px] uppercase tracking-[0.06em] text-white/70 transition hover:border-white hover:text-white sm:px-4 sm:text-[11px] sm:tracking-[0.08em]"
-          >
+          <BuyEbookButton className="whitespace-nowrap rounded-full border border-white/40 px-2 py-2 text-center text-[9px] uppercase tracking-[0.06em] text-white/70 transition hover:border-white hover:text-white sm:px-4 sm:text-[11px] sm:tracking-[0.08em]">
             {t("downloadEbook")}
-          </Link>
+          </BuyEbookButton>
           <Link
             href="#commencer"
             className="whitespace-nowrap rounded-full border border-white/40 px-2 py-2 text-center text-[9px] uppercase tracking-[0.06em] text-white/70 transition hover:border-white hover:text-white sm:px-4 sm:text-[11px] sm:tracking-[0.08em]"
@@ -109,14 +108,14 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <nav id="mobile-navigation" aria-label={t("mobileNavLabel")} hidden={!open} className="max-h-[calc(100dvh-110px)] overflow-y-auto border-t border-white/15 px-4 pb-4 pt-2 md:hidden" onClick={(event) => { if ((event.target as HTMLElement).closest("a")) setOpen(false); }}>
+        <nav id="mobile-navigation" aria-label={t("mobileNavLabel")} hidden={!open} className="max-h-[calc(100dvh-110px)] overflow-y-auto border-t border-white/15 px-4 pb-4 pt-2 md:hidden" onClick={(event) => { if ((event.target as HTMLElement).closest("a, button")) setOpen(false); }}>
           {NAV_LINKS.map((link) => (
             <Link key={link.label} href={link.href} aria-current={link.active ? "page" : undefined} className="flex min-h-11 items-center rounded-lg px-3 text-base text-white/85 hover:bg-white/10 hover:text-white focus-visible:outline-2 focus-visible:outline-[#B8A5FF]">
               {link.label}
             </Link>
           ))}
           <div className="mt-3 grid gap-2 border-t border-white/15 pt-4">
-            <Link href="#commencer" className="flex min-h-11 items-center justify-center rounded-full border border-white/40 px-4 py-3 text-center text-sm text-white/85 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">{t("downloadEbook")}</Link>
+            <BuyEbookButton className="flex min-h-11 items-center justify-center rounded-full border border-white/40 px-4 py-3 text-center text-sm text-white/85 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">{t("downloadEbook")}</BuyEbookButton>
             <Link href="#commencer" className="flex min-h-11 items-center justify-center rounded-full border border-white/40 px-4 py-3 text-center text-sm text-white/85 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">{t("downloadApp")}</Link>
             <a
               href={DISCORD_URL}

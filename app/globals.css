@@ -283,6 +283,20 @@ body {
   outline-offset: 4px;
 }
 
+@media (min-width: 768px) {
+  .community-discord-cta {
+    min-height: 88px;
+    gap: 16px;
+    padding: 16px 40px;
+    font-size: 19px;
+  }
+
+  .community-discord-cta svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 @media (max-width: 767px) {
   .pillars-repeat:nth-of-type(3) {
     opacity: .2 !important;
@@ -558,3 +572,182 @@ body {
   }
 
 }
+
+.success-page {
+  isolation: isolate;
+}
+
+.success-page::before {
+  position: absolute;
+  z-index: -2;
+  inset: -6px;
+  background-image:
+    linear-gradient(to top, #0a0a0a 0%, rgba(10, 10, 10, .35) 45%, rgba(10, 10, 10, .85) 100%),
+    linear-gradient(90deg, rgba(10, 10, 10, .82) 0%, rgba(10, 10, 10, .6) 50%, rgba(10, 10, 10, .38) 100%),
+    url("/backsign8.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.success-glow {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: min(760px, 150vw);
+  height: min(760px, 150vw);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184, 165, 255, .24), rgba(141, 112, 228, .08) 45%, transparent 70%);
+  filter: blur(20px);
+  pointer-events: none;
+  animation: success-glow-pulse 6s ease-in-out infinite;
+}
+
+@keyframes success-glow-pulse {
+  0%, 100% { opacity: .7; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
+}
+
+.success-card {
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, .45),
+    inset 0 1px rgba(255, 255, 255, .08);
+  animation: success-card-in 520ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+@keyframes success-card-in {
+  0% { transform: translateY(14px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.success-check {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  flex: none;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(140deg, #cabcff, #8d70e4);
+  box-shadow: 0 12px 32px rgba(141, 112, 228, .45);
+  color: #171122;
+  animation: success-check-pop 560ms 180ms cubic-bezier(.34, 1.56, .64, 1) both;
+}
+
+@keyframes success-check-pop {
+  0% { transform: scale(.4); opacity: 0; }
+  70% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 639px) {
+  .success-card {
+    padding: 32px 20px;
+    border-radius: 22px;
+  }
+
+  .success-check {
+    width: 60px;
+    height: 60px;
+  }
+
+  .success-check svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .success-page::before {
+    background-image:
+      linear-gradient(to top, #0a0a0a 0%, rgba(10, 10, 10, .4) 42%, rgba(10, 10, 10, .88) 100%),
+      linear-gradient(90deg, rgba(10, 10, 10, .84), rgba(10, 10, 10, .5)),
+      url("/backsign8.png");
+    background-position: center, center, 70% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .success-glow,
+  .success-card,
+  .success-check {
+    animation: none;
+  }
+}
+
+.support-page {
+  isolation: isolate;
+}
+
+.support-glow {
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  left: 50%;
+  width: min(720px, 140vw);
+  height: min(720px, 140vw);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(184, 165, 255, .2), rgba(141, 112, 228, .07) 45%, transparent 70%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.support-card {
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, .4),
+    inset 0 1px rgba(255, 255, 255, .08);
+  animation: success-card-in 520ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.support-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border: 1px solid #d5c7ff;
+  border-radius: 16px;
+  background: linear-gradient(115deg, #b8a5ff, #8d70e4);
+  box-shadow: 0 11px 32px rgba(119, 86, 213, .18);
+  color: #171122;
+  font-family: var(--font-inter), Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -.01em;
+  cursor: pointer;
+  transition: transform 220ms ease, box-shadow 220ms ease, opacity 220ms ease, background 220ms ease;
+}
+
+.support-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: linear-gradient(115deg, #c8baff, #a58df2);
+  box-shadow: 0 16px 42px rgba(119, 86, 213, .3);
+}
+
+.support-submit:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+.support-submit:disabled {
+  cursor: wait;
+  opacity: .55;
+}
+
+@media (max-width: 639px) {
+  .support-card {
+    padding: 28px 20px;
+    border-radius: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .support-card,
+  .support-submit {
+    animation: none;
+    transition: none;
+  }
+}
+
