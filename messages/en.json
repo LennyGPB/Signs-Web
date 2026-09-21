@@ -15,6 +15,8 @@
     "mobileNavLabel": "Main navigation"
   },
   "Home": {
+    "metaTitle": "Signs — Manifest With Method, Not By Chance",
+    "metaDescription": "The complete e-book and companion app to structure your intentions and transform 8 areas of your life: proven techniques, guided rituals, daily tracking.",
     "heroTitleLine1": "MANIFEST",
     "heroTitleLine2Prefix": "WITH",
     "heroTitleMethod": "METHOD",
@@ -43,14 +45,18 @@
     "footerLegal": "Legal",
     "footerPrivacy": "Privacy",
     "footerTerms": "Terms of use",
+    "footerLegalNotice": "Legal notice",
     "footerCopyright": "© {year} Signs. All rights reserved.",
     "footerMadeWith": "Made with method."
   },
   "Success": {
+    "metaTitle": "Payment Confirmed — Download Your E-Book | Signs",
+    "metaDescription": "Your payment was successful. Download your Signs e-book instantly and join the community.",
     "eyebrow": "Payment confirmed",
     "title": "Thank you for your purchase!",
     "description": "Your payment was received. Click below to download your e-book.",
     "downloadCta": "Download the e-book",
+    "joinDiscordCta": "Join the Discord",
     "backHome": "Back to home"
   },
   "Features": [
@@ -96,6 +102,8 @@
     }
   ],
   "Support": {
+    "metaTitle": "Support | Signs",
+    "metaDescription": "Get help or ask a question about the Signs app or e-book — our team replies by email.",
     "subtitle": "Support",
     "heading": "How can we help?",
     "description": "Send us your question or describe the issue you encountered. Our support team will reply by email.",
@@ -109,6 +117,8 @@
     "copyright": "© {year} Signs. All rights reserved."
   },
   "Privacy": {
+    "metaTitle": "Privacy Policy | Signs",
+    "metaDescription": "Learn how Signs collects, uses, and protects your personal data.",
     "subtitle": "Privacy Policy",
     "lastUpdated": "Last updated: {date}",
     "s1Title": "1. Introduction",
@@ -143,6 +153,9 @@
     "s4Item4": "secure database hosting.",
     "s4Item5Label": "Railway",
     "s4Item5": "backend hosting.",
+    "s4Item6Label": "Stripe",
+    "s4Item6": "processes payments when you purchase the e-book on the website (card number, billing email). We do not store your payment card details. See",
+    "s4Item6Link": "Stripe's privacy policy",
     "s5Title": "5. Data retention",
     "s5Body": "Your data is retained as long as your account is active. You can request deletion of your account and all associated data at any time.",
     "s6Title": "6. Your rights",
@@ -160,6 +173,8 @@
     "copyright": "© {year} Signs. All rights reserved."
   },
   "Terms": {
+    "metaTitle": "Terms of Use | Signs",
+    "metaDescription": "Read the Terms of Use governing the Signs app and website.",
     "subtitle": "Terms of Use",
     "lastUpdated": "Last updated: 24 August 2026",
     "s1Title": "1. The service",
@@ -179,7 +194,40 @@
     "s7Body": "Questions about these terms can be sent to",
     "copyright": "© {year} Signs. All rights reserved."
   },
+  "Legal": {
+    "metaTitle": "Legal Notice & Terms of Sale | Signs",
+    "metaDescription": "Legal notice, seller information, and terms of sale for the Signs e-book.",
+    "subtitle": "Legal Notice & Terms of Sale",
+    "lastUpdated": "Last updated: 21 September 2026",
+    "s1Title": "1. Website publisher",
+    "s1Item1": "The Signs website is published by GOMES PINTO BARRETO Lenny, sole proprietor (micro-entreprise).",
+    "s1Item2": "SIRET: 938 832 987 00011",
+    "s1Item3": "Address: 5 rue Auguste Bernard, 78320 La Verrière, France",
+    "s1Item4": "Email:",
+    "s2Title": "2. Hosting",
+    "s2Body": "The website is hosted by Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, United States.",
+    "s3Title": "3. Product sold",
+    "s3Body": "The website sells a digital e-book (PDF file) about manifestation and personal development. Detailed product information is presented on the homepage before purchase.",
+    "s4Title": "4. Price and payment",
+    "s4Body": "The price is displayed in euros, all taxes included, at the time of order. VAT not applicable, article 293 B of the French General Tax Code. Payment is made by card via Stripe, which secures the transaction; Signs does not store any payment card data.",
+    "s5Title": "5. Delivery",
+    "s5Body": "The e-book is digital content delivered immediately after payment confirmation, via a download link available on the order confirmation page. No physical shipment takes place.",
+    "s6Title": "6. Right of withdrawal",
+    "s6Body": "In accordance with French law (article L221-28 13° of the Consumer Code), the standard 14-day right of withdrawal does not apply to digital content not supplied on a physical medium whose performance has begun after your prior, express agreement and your express waiver of that right. This agreement and waiver are collected via a mandatory checkbox before payment is confirmed. As a result, no refund can be claimed under the right of withdrawal once the e-book download has taken place.",
+    "s7Title": "7. Complaints and mediation",
+    "s7Body": "In the event of a dispute, please contact us first at the address below so we can find an amicable solution. Failing that, in accordance with article L616-1 of the French Consumer Code, you may refer the matter free of charge to a consumer mediator [TO BE COMPLETED: name and contact details of the approved mediator].",
+    "s8Title": "8. Intellectual property",
+    "s8Body": "The e-book and all website content (text, visuals, logo) are protected by copyright. Any reproduction, redistribution, or resale, in whole or in part, without prior written authorisation is prohibited.",
+    "s9Title": "9. Personal data",
+    "s9Body": "The processing of your personal data, including during payment, is described in our",
+    "s9Link": "Privacy Policy",
+    "s10Title": "10. Contact",
+    "s10Body": "For any question about this legal notice or an order, email us at",
+    "copyright": "© {year} Signs. All rights reserved."
+  },
   "DeleteAccount": {
+    "metaTitle": "Delete My Account | Signs",
+    "metaDescription": "Request permanent deletion of your Signs account and all associated data.",
     "subtitle": "Data Deletion Request",
     "heading": "Delete your account & data",
     "description": "To permanently delete your Signs account and all associated data (manifestations, rituals, posts, subscriptions), send an email to the address below with the subject line",

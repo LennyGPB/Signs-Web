@@ -15,6 +15,8 @@
     "mobileNavLabel": "Navigation principale"
   },
   "Home": {
+    "metaTitle": "Signs — Manifeste avec méthode, pas par hasard",
+    "metaDescription": "Le guide complet et l'appli mobile pour structurer tes intentions et transformer 8 domaines de ta vie : techniques éprouvées, rituels guidés, suivi quotidien.",
     "heroTitleLine1": "MANIFESTE",
     "heroTitleLine2Prefix": "AVEC",
     "heroTitleMethod": "MÉTHODE",
@@ -31,7 +33,7 @@
     "availableOn": "Disponible sur",
     "appStore": "App Store",
     "playStore": "Play Store",
-    "communityTitlePrefix": "Rejoins la",
+    "communityTitlePrefix": "La",
     "communityTitleWord": "communauté",
     "communityDescription": "Échange avec celles et ceux qui manifestent avec méthode : partage tes rituels, pose tes questions et suis les coulisses de l'application avant tout le monde.",
     "footerTagline": "Manifeste avec méthode, pas par hasard.",
@@ -43,6 +45,7 @@
     "footerLegal": "Légal",
     "footerPrivacy": "Confidentialité",
     "footerTerms": "Conditions d'utilisation",
+    "footerLegalNotice": "Mentions légales",
     "footerCopyright": "© {year} Signs. Tous droits réservés.",
     "footerMadeWith": "Fait avec méthode."
   },
@@ -89,13 +92,18 @@
     }
   ],
   "Success": {
+    "metaTitle": "Paiement confirmé — Télécharge ton e-book | Signs",
+    "metaDescription": "Ton paiement a été confirmé. Télécharge ton e-book Signs immédiatement et rejoins la communauté.",
     "eyebrow": "Paiement confirmé",
     "title": "Merci pour ton achat !",
     "description": "Ton paiement a bien été reçu. Clique ci-dessous pour télécharger ton e-book.",
     "downloadCta": "Télécharger l'e-book",
+    "joinDiscordCta": "Rejoindre le Discord",
     "backHome": "Retour à l'accueil"
   },
   "Support": {
+    "metaTitle": "Support | Signs",
+    "metaDescription": "Besoin d'aide ou une question sur l'appli ou l'e-book Signs ? Notre équipe répond par e-mail.",
     "subtitle": "Support",
     "heading": "Comment pouvons-nous vous aider ?",
     "description": "Envoyez-nous votre question ou décrivez le problème rencontré. Notre équipe support vous répondra par e-mail.",
@@ -109,6 +117,8 @@
     "copyright": "© {year} Signs. Tous droits réservés."
   },
   "Privacy": {
+    "metaTitle": "Politique de confidentialité | Signs",
+    "metaDescription": "Découvre comment Signs collecte, utilise et protège tes données personnelles.",
     "subtitle": "Politique de confidentialité",
     "lastUpdated": "Dernière mise à jour : {date}",
     "s1Title": "1. Introduction",
@@ -143,6 +153,9 @@
     "s4Item4": "hébergement sécurisé de la base de données.",
     "s4Item5Label": "Railway",
     "s4Item5": "hébergement du backend.",
+    "s4Item6Label": "Stripe",
+    "s4Item6": "traite les paiements lors de l'achat de l'e-book sur le site (numéro de carte, e-mail de facturation). Nous ne stockons pas les données de ta carte bancaire. Voir",
+    "s4Item6Link": "la politique de confidentialité de Stripe",
     "s5Title": "5. Conservation des données",
     "s5Body": "Tes données sont conservées tant que ton compte est actif. Tu peux demander la suppression de ton compte et de toutes les données associées à tout moment.",
     "s6Title": "6. Tes droits",
@@ -160,6 +173,8 @@
     "copyright": "© {year} Signs. Tous droits réservés."
   },
   "Terms": {
+    "metaTitle": "Conditions d'utilisation | Signs",
+    "metaDescription": "Consulte les conditions d'utilisation de l'application et du site Signs.",
     "subtitle": "Conditions d'utilisation",
     "lastUpdated": "Dernière mise à jour : 24 août 2026",
     "s1Title": "1. Le service",
@@ -179,7 +194,40 @@
     "s7Body": "Toute question concernant ces conditions peut être envoyée à",
     "copyright": "© {year} Signs. Tous droits réservés."
   },
+  "Legal": {
+    "metaTitle": "Mentions légales & CGV | Signs",
+    "metaDescription": "Mentions légales, identité du vendeur et conditions générales de vente de l'e-book Signs.",
+    "subtitle": "Mentions légales & conditions générales de vente",
+    "lastUpdated": "Dernière mise à jour : 21 septembre 2026",
+    "s1Title": "1. Éditeur du site",
+    "s1Item1": "Le site Signs est édité par GOMES PINTO BARRETO Lenny, entrepreneur individuel (micro-entreprise).",
+    "s1Item2": "SIRET : 938 832 987 00011",
+    "s1Item3": "Adresse : 5 rue Auguste Bernard, 78320 La Verrière, France",
+    "s1Item4": "E-mail :",
+    "s2Title": "2. Hébergement",
+    "s2Body": "Le site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis.",
+    "s3Title": "3. Produit vendu",
+    "s3Body": "Le site propose à la vente un e-book numérique (fichier PDF) sur la manifestation et le développement personnel. Le contenu détaillé du produit est présenté sur la page d'accueil du site avant l'achat.",
+    "s4Title": "4. Prix et paiement",
+    "s4Body": "Le prix est affiché en euros, toutes taxes comprises, au moment de la commande. TVA non applicable, article 293 B du Code général des impôts. Le paiement s'effectue par carte bancaire via le prestataire Stripe, qui sécurise la transaction ; Signs ne stocke aucune donnée de carte bancaire.",
+    "s5Title": "5. Livraison",
+    "s5Body": "L'e-book est un contenu numérique livré immédiatement après confirmation du paiement, sous forme d'un lien de téléchargement disponible sur la page de confirmation de commande. Aucune expédition physique n'a lieu.",
+    "s6Title": "6. Droit de rétractation",
+    "s6Body": "Conformément à l'article L221-28 13° du Code de la consommation, le droit de rétractation de 14 jours ne s'applique pas à la fourniture d'un contenu numérique non fourni sur un support matériel dont l'exécution a commencé après ton accord préalable et exprès et ta renonciation expresse à ce droit. Cet accord et cette renonciation sont recueillis par une case à cocher obligatoire avant la validation du paiement. En conséquence, aucun remboursement ne peut être exigé au titre du droit de rétractation une fois le téléchargement de l'e-book effectué.",
+    "s7Title": "7. Réclamations et médiation",
+    "s7Body": "En cas de litige, contacte-nous d'abord à l'adresse ci-dessous afin de trouver une solution amiable. À défaut d'accord, conformément à l'article L616-1 du Code de la consommation, tu peux recourir gratuitement à un médiateur de la consommation [À COMPLÉTER : nom et coordonnées du médiateur agréé].",
+    "s8Title": "8. Propriété intellectuelle",
+    "s8Body": "L'e-book et l'ensemble des contenus du site (textes, visuels, logo) sont protégés par le droit d'auteur. Toute reproduction, redistribution ou revente, totale ou partielle, sans autorisation écrite préalable est interdite.",
+    "s9Title": "9. Données personnelles",
+    "s9Body": "Le traitement de tes données personnelles, y compris lors du paiement, est décrit dans notre",
+    "s9Link": "politique de confidentialité",
+    "s10Title": "10. Contact",
+    "s10Body": "Pour toute question relative à ces mentions légales ou à une commande, écris-nous à",
+    "copyright": "© {year} Signs. Tous droits réservés."
+  },
   "DeleteAccount": {
+    "metaTitle": "Supprimer mon compte | Signs",
+    "metaDescription": "Demande la suppression définitive de ton compte Signs et de toutes tes données.",
     "subtitle": "Demande de suppression des données",
     "heading": "Supprimer ton compte et tes données",
     "description": "Pour supprimer définitivement ton compte Signs et toutes les données associées (manifestations, rituels, publications, abonnements), envoie un e-mail à l'adresse ci-dessous avec pour objet",

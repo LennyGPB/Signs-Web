@@ -9,17 +9,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Terms" });
+  const t = await getTranslations({ locale, namespace: "Legal" });
   return buildMetadata({
     locale,
-    path: "/terms",
+    path: "/legal",
     title: t("metaTitle"),
     description: t("metaDescription"),
   });
 }
 
-export default function TermsPage() {
-  const t = useTranslations("Terms");
+export default function LegalPage() {
+  const t = useTranslations("Legal");
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] px-6 py-16 text-white">
@@ -36,7 +36,17 @@ export default function TermsPage() {
 
           <section>
             <h2 className="mb-3 text-lg font-semibold text-white">{t("s1Title")}</h2>
-            <p>{t("s1Body")}</p>
+            <ul className="space-y-1">
+              <li>{t("s1Item1")}</li>
+              <li>{t("s1Item2")}</li>
+              <li>{t("s1Item3")}</li>
+              <li>
+                {t("s1Item4")}{" "}
+                <a href="mailto:gleam-pro@proton.me" className="text-[#B8A5FF] underline">
+                  gleam-pro@proton.me
+                </a>
+              </li>
+            </ul>
           </section>
 
           <section>
@@ -61,19 +71,34 @@ export default function TermsPage() {
 
           <section>
             <h2 className="mb-3 text-lg font-semibold text-white">{t("s6Title")}</h2>
+            <p>{t("s6Body")}</p>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-white">{t("s7Title")}</h2>
+            <p>{t("s7Body")}</p>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-white">{t("s8Title")}</h2>
+            <p>{t("s8Body")}</p>
+          </section>
+
+          <section>
+            <h2 className="mb-3 text-lg font-semibold text-white">{t("s9Title")}</h2>
             <p>
-              {t("s6Body")}{" "}
+              {t("s9Body")}{" "}
               <a href="/privacy" className="text-[#B8A5FF] underline">
-                {t("s6Link")}
+                {t("s9Link")}
               </a>
               .
             </p>
           </section>
 
           <section>
-            <h2 className="mb-3 text-lg font-semibold text-white">{t("s7Title")}</h2>
+            <h2 className="mb-3 text-lg font-semibold text-white">{t("s10Title")}</h2>
             <p>
-              {t("s7Body")}{" "}
+              {t("s10Body")}{" "}
               <a href="mailto:gleam-pro@proton.me" className="text-[#B8A5FF] underline">
                 gleam-pro@proton.me
               </a>

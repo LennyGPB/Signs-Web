@@ -4,6 +4,8 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { SITE_URL } from "@/lib/constants";
+import JsonLd from "./components/JsonLd";
 import "../globals.css";
 
 // Mêmes polices que l'app mobile Signs : Candal pour les titres, Inter pour
@@ -31,8 +33,14 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
+    metadataBase: new URL(SITE_URL),
     title: t("title"),
     description: t("description"),
+    robots: {
+      index: true,
+      follow: true,
+    },
+    manifest: "/manifest.webmanifest",
   };
 }
 
@@ -55,6 +63,15 @@ export default async function RootLayout({
       className={`${candal.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Signs",
+            url: SITE_URL,
+            logo: `${SITE_URL}/logo-icon.png`,
+          }}
+        />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

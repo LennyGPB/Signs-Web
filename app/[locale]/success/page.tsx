@@ -1,7 +1,29 @@
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { stripe } from "@/lib/stripe";
 import { Link } from "@/i18n/navigation";
+import { DISCORD_URL } from "@/lib/constants";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Success" });
+  return {
+    ...buildMetadata({
+      locale,
+      path: "/success",
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+    }),
+    // Page post-paiement : jamais destinée à être indexée ou partagée depuis les résultats de recherche.
+    robots: { index: false, follow: false },
+  };
+}
 
 export default async function SuccessPage({
   searchParams,
@@ -55,6 +77,15 @@ export default async function SuccessPage({
               <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 18v2h14v-2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
+        </a>
+
+        <a
+          href={DISCORD_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="hero-discord-cta w-full justify-center sm:w-auto"
+        >
+          <span>{t("joinDiscordCta")}</span>
         </a>
 
         <Link

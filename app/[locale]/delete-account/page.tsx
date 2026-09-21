@@ -1,4 +1,22 @@
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "DeleteAccount" });
+  return buildMetadata({
+    locale,
+    path: "/delete-account",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  });
+}
 
 export default function DeleteAccountPage() {
   const t = useTranslations("DeleteAccount");
@@ -9,7 +27,7 @@ export default function DeleteAccountPage() {
 
         {/* Logo */}
         <div className="mb-12 text-center">
-          <h1 className="font-candal text-4xl tracking-tight">Signs</h1>
+          <p className="font-candal text-4xl tracking-tight">Signs</p>
           <p className="text-white/40 text-sm mt-2 tracking-widest uppercase">
             {t("subtitle")}
           </p>
@@ -17,9 +35,9 @@ export default function DeleteAccountPage() {
 
         {/* Card */}
         <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
-          <h2 className="text-xl font-semibold mb-3">
+          <h1 className="text-xl font-semibold mb-3">
             {t("heading")}
-          </h2>
+          </h1>
           <p className="text-white/50 text-sm leading-7 mb-8">
             {t("description")}{" "}
             <span className="text-white font-medium">{t("descriptionSubject")}</span>{" "}

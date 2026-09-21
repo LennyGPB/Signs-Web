@@ -1,5 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
+import type { Metadata } from "next";
 import { useLocale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Privacy" });
+  return buildMetadata({
+    locale,
+    path: "/privacy",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  });
+}
 
 export default function PrivacyPage() {
   const t = useTranslations("Privacy");
@@ -11,10 +29,10 @@ export default function PrivacyPage() {
 
         {/* Header */}
         <div className="mb-12">
-          <h1 className="font-candal text-4xl tracking-tight mb-2">Signs</h1>
-          <p className="text-white/40 text-sm tracking-widest uppercase">
+          <p className="font-candal text-4xl tracking-tight mb-2">Signs</p>
+          <h1 className="text-white/40 text-sm tracking-widest uppercase">
             {t("subtitle")}
-          </p>
+          </h1>
         </div>
 
         <div className="space-y-10 text-white/70 text-sm leading-7">
@@ -66,6 +84,7 @@ export default function PrivacyPage() {
               <li>• <span className="text-white">{t("s4Item3Label")}</span> — {t("s4Item3")}</li>
               <li>• <span className="text-white">{t("s4Item4Label")}</span> — {t("s4Item4")}</li>
               <li>• <span className="text-white">{t("s4Item5Label")}</span> — {t("s4Item5")}</li>
+              <li>• <span className="text-white">{t("s4Item6Label")}</span> — {t("s4Item6")} <a href="https://stripe.com/privacy" className="text-[#B8A5FF] underline">{t("s4Item6Link")}</a>.</li>
             </ul>
           </section>
 

@@ -1,17 +1,57 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Navbar from "./components/Navbar";
 import BuyEbookButton from "./components/BuyEbookButton";
 import AccordionFeatures from "./components/AccordionFeatures";
 import DoodleEllipse from "./components/DoodleEllipse";
-import { DISCORD_URL } from "@/lib/constants";
+import JsonLd from "./components/JsonLd";
+import { DISCORD_URL, EBOOK_NAME, EBOOK_PRICE_EUR_CENTS, SITE_URL } from "@/lib/constants";
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Home" });
+  return buildMetadata({
+    locale,
+    path: "/",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  });
+}
 
 export default function Home() {
   const t = useTranslations("Home");
 
   return (
     <main className="relative min-h-screen overflow-x-clip bg-[#0A0A0A] text-white">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: EBOOK_NAME,
+          description: t("metaDescription"),
+          image: `${SITE_URL}/logo-icon.png`,
+          brand: {
+            "@type": "Brand",
+            name: "Signs",
+          },
+          offers: {
+            "@type": "Offer",
+            url: SITE_URL,
+            priceCurrency: "EUR",
+            price: (EBOOK_PRICE_EUR_CENTS / 100).toFixed(2),
+            availability: "https://schema.org/InStock",
+          },
+        }}
+      />
+
       {/* Header */}
       <Navbar />
 
@@ -35,7 +75,7 @@ export default function Home() {
           </p>
 
           <div className="mt-9 flex flex-col items-stretch gap-4 sm:flex-row sm:flex-wrap sm:items-start">
-            <div className="flex w-full flex-col gap-3 sm:w-auto">
+            <div className="flex w-full flex-col-reverse gap-3 sm:w-auto sm:flex-col">
               <BuyEbookButton className="hero-ebook-cta w-full sm:w-auto">
                 <span className="text-white tracking-wider font-thin">{t("heroCta")}</span>
                 <span className="hero-ebook-cta-icon" aria-hidden="true">
@@ -197,6 +237,11 @@ export default function Home() {
                   <li>
                     <Link href="/terms" className="flex min-h-11 items-center rounded-sm py-2 leading-6 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B8A5FF] motion-reduce:transition-none">
                       {t("footerTerms")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/legal" className="flex min-h-11 items-center rounded-sm py-2 leading-6 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B8A5FF] motion-reduce:transition-none">
+                      {t("footerLegalNotice")}
                     </Link>
                   </li>
                 </ul>
