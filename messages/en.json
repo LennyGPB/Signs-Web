@@ -9,7 +9,6 @@
     "support": "Support",
     "downloadEbook": "Download the E-Book",
     "downloadApp": "Download the app",
-    "joinDiscord": "Join the Discord",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "mobileNavLabel": "Main navigation"
@@ -23,9 +22,8 @@
     "heroTitleLine3": "NOT BY CHANCE.",
     "heroDescriptionBold": "The complete guide",
     "heroDescriptionRest": "to structure your intentions and transform 8 areas of your life: proven techniques, guided exercises, a daily ritual.",
-    "heroCta": "Download the E-Book - €17",
+    "heroCta": "E-Book + Private Community - €17",
     "heroReassurance": "100% secure payment (Stripe) · Instant access",
-    "heroDiscordCta": "Join the Discord",
     "pillarsTitlePrefix": "The 8",
     "pillarsTitleWord": "pillars",
     "appIntroBadge": "SIGNS - Mobile app coming soon!",
@@ -35,7 +33,8 @@
     "playStore": "Play Store",
     "communityTitlePrefix": "Join the",
     "communityTitleWord": "community",
-    "communityDescription": "Connect with people manifesting with method: share your rituals, ask your questions, and follow the app's development before anyone else.",
+    "communityDescription": "A private Discord reserved for e-book buyers: share your rituals, ask your questions, and follow the app's development before anyone else.",
+    "communityCta": "Unlock access with the e-book",
     "footerTagline": "Manifest with method, not by chance.",
     "footerProduct": "Product",
     "footerFeatures": "The Method",
@@ -56,7 +55,7 @@
     "title": "Thank you for your purchase!",
     "description": "Your payment was received. Click below to download your e-book.",
     "downloadCta": "Download the e-book",
-    "joinDiscordCta": "Join the Discord",
+    "joinDiscordCta": "Join the Private Discord",
     "backHome": "Back to home"
   },
   "Features": [

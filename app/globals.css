@@ -171,16 +171,16 @@ body {
   min-height: 76px;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: clamp(10px, 4vw, 30px);
   overflow: hidden;
-  padding: 12px 12px 12px 30px;
+  padding: 12px clamp(8px, 2.5vw, 12px) 12px clamp(16px, 6vw, 30px);
   border: 1px solid #d5c7ff;
   border-radius: 999px;
   background: linear-gradient(115deg, #b8a5ff, #8d70e4);
   box-shadow: 0 11px 32px rgba(119, 86, 213, .18);
   color: #171122;
   font-family: var(--font-inter), Arial, sans-serif;
-  font-size: 16px;
+  font-size: clamp(11px, 3.6vw, 16px);
   font-weight: 650;
   letter-spacing: -.02em;
   line-height: 1.2;
@@ -206,6 +206,7 @@ body {
 
 .hero-ebook-cta > span:first-child {
   font-family: var(--font-candal), Georgia, serif;
+  white-space: nowrap;
 }
 
 .hero-ebook-cta:hover {
@@ -266,6 +267,10 @@ body {
   letter-spacing: -.02em;
   line-height: 1.2;
   transition: transform 220ms ease, border-color 220ms ease;
+}
+
+.hero-discord-cta.has-icon {
+  padding: 12px 12px 12px 30px;
 }
 
 .hero-discord-cta svg {
@@ -340,9 +345,6 @@ body {
 
   .hero-ebook-cta {
     min-height: 68px;
-    gap: 12px;
-    padding: 9px 9px 9px 20px;
-    font-size: 14px;
   }
 
   .hero-ebook-cta-icon {

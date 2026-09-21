@@ -26,12 +26,16 @@ export async function generateMetadata({
 }
 
 export default async function SuccessPage({
+  params,
   searchParams,
 }: {
+  params: Promise<{ locale: string }>;
   searchParams: Promise<{ session_id?: string }>;
 }) {
+  const { locale } = await params;
   const { session_id: sessionId } = await searchParams;
   const t = await getTranslations("Success");
+  const ebookLang = locale === "fr" ? "fr" : "en";
 
   if (!sessionId) {
     redirect("/");
@@ -68,8 +72,8 @@ export default async function SuccessPage({
         <p className="max-w-sm text-sm leading-6 text-white/65 sm:text-base">{t("description")}</p>
 
         <a
-          href={`/api/download?session_id=${encodeURIComponent(sessionId)}`}
-          className="hero-ebook-cta w-full justify-center sm:w-auto"
+          href={`/api/download?session_id=${encodeURIComponent(sessionId)}&lang=${ebookLang}`}
+          className="hero-ebook-cta w-full justify-center"
         >
           <span className="text-white tracking-wider font-thin">{t("downloadCta")}</span>
           <span className="hero-ebook-cta-icon" aria-hidden="true">
@@ -83,9 +87,14 @@ export default async function SuccessPage({
           href={DISCORD_URL}
           target="_blank"
           rel="noreferrer"
-          className="hero-discord-cta w-full justify-center sm:w-auto"
+          className="hero-ebook-cta w-full justify-center"
         >
-          <span>{t("joinDiscordCta")}</span>
+          <span className="text-white tracking-wider font-thin">{t("joinDiscordCta")}</span>
+          <span className="hero-ebook-cta-icon" aria-hidden="true">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.32 5.37a18.6 18.6 0 0 0-4.6-1.43.07.07 0 0 0-.08.04c-.2.36-.42.82-.57 1.19a17.2 17.2 0 0 0-5.15 0 8.7 8.7 0 0 0-.58-1.19.07.07 0 0 0-.08-.04 18.5 18.5 0 0 0-4.6 1.43.07.07 0 0 0-.03.03C1.55 9.1.85 12.7 1.19 16.27a.08.08 0 0 0 .03.05 18.7 18.7 0 0 0 5.63 2.85.07.07 0 0 0 .08-.03c.43-.6.82-1.23 1.15-1.89a.07.07 0 0 0-.04-.1 12.3 12.3 0 0 1-1.76-.84.07.07 0 0 1-.01-.12c.12-.09.24-.18.35-.27a.07.07 0 0 1 .07-.01c3.7 1.69 7.7 1.69 11.36 0a.07.07 0 0 1 .07.01c.12.09.23.18.35.27a.07.07 0 0 1-.01.12c-.56.33-1.15.6-1.76.84a.07.07 0 0 0-.04.1c.34.66.73 1.29 1.15 1.89a.07.07 0 0 0 .08.03 18.6 18.6 0 0 0 5.64-2.85.07.07 0 0 0 .03-.05c.4-4.13-.67-7.7-2.83-10.87a.06.06 0 0 0-.03-.03ZM8.68 14.1c-1.11 0-2.03-1.02-2.03-2.27s.9-2.27 2.03-2.27c1.14 0 2.05 1.03 2.03 2.27 0 1.25-.9 2.27-2.03 2.27Zm6.66 0c-1.11 0-2.02-1.02-2.02-2.27s.9-2.27 2.02-2.27c1.14 0 2.05 1.03 2.03 2.27 0 1.25-.89 2.27-2.03 2.27Z" />
+            </svg>
+          </span>
         </a>
 
         <Link

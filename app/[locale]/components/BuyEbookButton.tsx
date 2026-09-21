@@ -42,7 +42,7 @@ export default function BuyEbookButton({
       onClick={handleClick}
       disabled={loading}
       aria-busy={loading}
-      className={className}
+      className={`cursor-pointer ${className ?? ""}`}
       style={loading ? { opacity: 0.6, cursor: "wait" } : undefined}
     >
       {children}

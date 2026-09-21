@@ -9,7 +9,6 @@
     "support": "Support",
     "downloadEbook": "Télécharger le E-Book",
     "downloadApp": "Télécharger l'application",
-    "joinDiscord": "Rejoindre le Discord",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "mobileNavLabel": "Navigation principale"
@@ -23,9 +22,8 @@
     "heroTitleLine3": "PAS PAR HASARD.",
     "heroDescriptionBold": "Le guide complet",
     "heroDescriptionRest": "pour structurer tes intentions et transformer 8 domaines de ta vie : techniques éprouvées, exercices guidés, rituel quotidien.",
-    "heroCta": "Télécharger le E-Book - 17 €",
+    "heroCta": "E-Book + Communauté privée - 17 €",
     "heroReassurance": "Paiement 100 % sécurisé (Stripe) · Accès immédiat",
-    "heroDiscordCta": "Rejoindre le Discord",
     "pillarsTitlePrefix": "Les 8",
     "pillarsTitleWord": "piliers",
     "appIntroBadge": "SIGNS - Application mobile bientôt disponible !",
@@ -35,7 +33,8 @@
     "playStore": "Play Store",
     "communityTitlePrefix": "La",
     "communityTitleWord": "communauté",
-    "communityDescription": "Échange avec celles et ceux qui manifestent avec méthode : partage tes rituels, pose tes questions et suis les coulisses de l'application avant tout le monde.",
+    "communityDescription": "Un Discord privé réservé aux acheteurs de l'e-book : partage tes rituels, pose tes questions et suis les coulisses de l'application avant tout le monde.",
+    "communityCta": "Débloquer l'accès avec l'e-book",
     "footerTagline": "Manifeste avec méthode, pas par hasard.",
     "footerProduct": "Produit",
     "footerFeatures": "La méthode",
@@ -98,7 +97,7 @@
     "title": "Merci pour ton achat !",
     "description": "Ton paiement a bien été reçu. Clique ci-dessous pour télécharger ton e-book.",
     "downloadCta": "Télécharger l'e-book",
-    "joinDiscordCta": "Rejoindre le Discord",
+    "joinDiscordCta": "Rejoindre le Discord privé",
     "backHome": "Retour à l'accueil"
   },
   "Support": {

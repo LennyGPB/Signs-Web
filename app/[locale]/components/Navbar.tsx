@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useEffect, useRef, useState } from "react";
-import { DISCORD_URL } from "@/lib/constants";
 import BuyEbookButton from "./BuyEbookButton";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
@@ -86,14 +86,7 @@ export default function Navbar() {
           >
             {t("downloadApp")}
           </Link>
-          <a
-            href={DISCORD_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="whitespace-nowrap rounded-full border border-[#5865F2]/50 px-2 py-2 text-center text-[9px] uppercase tracking-[0.06em] text-[#c9ccff] transition hover:border-[#5865F2] hover:text-white sm:px-4 sm:text-[11px] sm:tracking-[0.08em]"
-          >
-            {t("joinDiscord")}
-          </a>
+          <LanguageSwitcher />
         </div>
         </div>
 
@@ -102,11 +95,14 @@ export default function Navbar() {
             <Image src="/logo.png" alt="" width={30} height={30} />
             <span className="font-candal text-base tracking-wide text-white">SIGNS</span>
           </div>
-          <button ref={buttonRef} type="button" aria-label={open ? t("closeMenu") : t("openMenu")} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)} className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">
-            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
-              <path d={open ? "M6 6l12 12M6 18L18 6" : "M4 6h16M4 12h16M4 18h16"} />
-            </svg>
-          </button>
+          <div className="flex items-center gap-2">
+            <LanguageSwitcher />
+            <button ref={buttonRef} type="button" aria-label={open ? t("closeMenu") : t("openMenu")} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)} className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                <path d={open ? "M6 6l12 12M6 18L18 6" : "M4 6h16M4 12h16M4 18h16"} />
+              </svg>
+            </button>
+          </div>
         </div>
         <nav id="mobile-navigation" aria-label={t("mobileNavLabel")} hidden={!open} className="max-h-[calc(100dvh-110px)] overflow-y-auto border-t border-white/15 px-4 pb-4 pt-2 md:hidden" onClick={(event) => { if ((event.target as HTMLElement).closest("a, button")) setOpen(false); }}>
           {NAV_LINKS.map((link) => (
@@ -117,14 +113,6 @@ export default function Navbar() {
           <div className="mt-3 grid gap-2 border-t border-white/15 pt-4">
             <BuyEbookButton className="flex min-h-11 items-center justify-center rounded-full border border-white/40 px-4 py-3 text-center text-sm text-white/85 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">{t("downloadEbook")}</BuyEbookButton>
             <Link href="#commencer" className="flex min-h-11 items-center justify-center rounded-full border border-white/40 px-4 py-3 text-center text-sm text-white/85 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8A5FF]">{t("downloadApp")}</Link>
-            <a
-              href={DISCORD_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="flex min-h-11 items-center justify-center rounded-full border border-[#5865F2]/50 px-4 py-3 text-center text-sm text-[#c9ccff] hover:border-[#5865F2] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5865F2]"
-            >
-              {t("joinDiscord")}
-            </a>
           </div>
         </nav>
       </header>
