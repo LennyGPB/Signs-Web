@@ -41,6 +41,9 @@ export async function generateMetadata({
       follow: true,
     },
     manifest: "/manifest.webmanifest",
+    other: {
+      "p:domain_verify": "19419fda832a79c570e3502088065129",
+    },
   };
 }
 
