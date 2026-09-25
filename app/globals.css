@@ -141,6 +141,11 @@ body {
   transition: opacity 220ms ease, filter 220ms ease;
 }
 
+a.hero-store-badge:hover {
+  border-color: rgba(255, 255, 255, .6);
+  background: rgba(255, 255, 255, .08);
+}
+
 .hero-store-badge.is-coming-soon {
   cursor: not-allowed;
   filter: grayscale(.4);

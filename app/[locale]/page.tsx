@@ -115,7 +115,12 @@ export default function Home() {
               </svg>
               <span><small>{t("availableOn")}</small><strong>{t("appStore")}</strong></span>
             </div>
-            <div className="hero-store-badge is-coming-soon" aria-disabled="true">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.signs.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-store-badge"
+            >
               <svg aria-hidden="true" width="31" height="33" viewBox="0 0 28 30" className="shrink-0">
                 <path d="M2 2v26l14-13Z" fill="#57C6EA" />
                 <path d="m2 2 17 10-3 3Z" fill="#77D48A" />
@@ -123,7 +128,7 @@ export default function Home() {
                 <path d="m2 28 17-10-3-3Z" fill="#F27585" />
               </svg>
               <span><small>{t("availableOn")}</small><strong>{t("playStore")}</strong></span>
-            </div>
+            </a>
           </div>
         </div>
       </section>
