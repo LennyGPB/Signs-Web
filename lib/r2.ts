@@ -17,8 +17,8 @@ export const r2 = new S3Client({
 export const R2_BUCKET_NAME = process.env.R2_BUCKET_NAME ?? "signs";
 
 export const EBOOK_OBJECT_KEYS = {
-  fr: "ebook/ebook_francais.pdf",
-  en: "ebook/ebook_english.pdf",
+  fr: "ebook/ebook_francais2.pdf",
+  en: "ebook/ebook_english2.pdf",
 } as const;
 
 export type EbookLang = keyof typeof EBOOK_OBJECT_KEYS;

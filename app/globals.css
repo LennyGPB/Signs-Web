@@ -251,62 +251,6 @@ a.hero-store-badge:hover {
   50% { opacity: .26; }
 }
 
-.hero-discord-cta {
-  display: inline-flex;
-  min-height: 76px;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 30px;
-  border: 1px solid rgba(216, 205, 255, .18);
-  border-radius: 999px;
-  background: linear-gradient(115deg, rgba(20, 17, 29, .62), rgba(60, 45, 90, .42) 48%, rgba(20, 17, 29, .58));
-  box-shadow:
-    0 16px 42px rgba(0, 0, 0, .35),
-    inset 0 1px rgba(255, 255, 255, .12),
-    inset 0 -1px rgba(255, 255, 255, .04);
-  backdrop-filter: blur(36px) saturate(1.65);
-  color: #fff;
-  font-family: var(--font-inter), Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 650;
-  letter-spacing: -.02em;
-  line-height: 1.2;
-  transition: transform 220ms ease, border-color 220ms ease;
-}
-
-.hero-discord-cta.has-icon {
-  padding: 12px 12px 12px 30px;
-}
-
-.hero-discord-cta svg {
-  flex: none;
-  color: #fff;
-}
-
-.hero-discord-cta:hover {
-  transform: translateY(-3px);
-  border-color: rgba(216, 205, 255, .4);
-}
-
-.hero-discord-cta:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 4px;
-}
-
-@media (min-width: 768px) {
-  .community-discord-cta {
-    min-height: 88px;
-    gap: 16px;
-    padding: 16px 40px;
-    font-size: 19px;
-  }
-
-  .community-discord-cta svg {
-    width: 26px;
-    height: 26px;
-  }
-}
-
 @media (max-width: 767px) {
   .pillars-repeat:nth-of-type(3) {
     opacity: .2 !important;
@@ -314,13 +258,6 @@ a.hero-store-badge:hover {
 
   .pillars-repeat:nth-of-type(4) {
     opacity: .05 !important;
-  }
-
-  .hero-discord-cta {
-    min-height: 68px;
-    gap: 10px;
-    padding: 9px 22px;
-    font-size: 14px;
   }
 
   .hero-editorial::before {

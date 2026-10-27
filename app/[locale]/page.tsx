@@ -97,7 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="app-intro">
+      <section id="commencer" className="app-intro">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 pt-6 pb-8 text-center sm:py-16 md:flex-row md:items-center md:justify-between md:gap-8 md:px-10 md:text-left">
           <div className="flex flex-col items-center gap-3 md:flex-row md:items-center md:gap-4">
             <Image src="/logo.png" alt="" width={72} height={72} className="hidden h-14 w-14 shrink-0 object-contain sm:h-[72px] sm:w-[72px] md:block" />
@@ -134,7 +134,7 @@ export default function Home() {
       </section>
 
       {/* La Méthode — accordéon 01 à 08 */}
-      <section id="fonctionnalites" className="relative mx-auto max-w-6xl px-6 pt-8 md:px-10 md:pt-0">
+      <section id="fonctionnalites" className="relative mx-auto max-w-6xl px-6 pt-8 pb-16 md:px-10 md:pt-0 md:pb-24">
         <h2 className="pillars-title mb-8 flex flex-nowrap items-baseline gap-3 text-3xl text-white sm:text-4xl md:mb-12 md:text-5xl">
           <span className="shrink-0 font-thin tracking-tight">{t("pillarsTitlePrefix")}</span>
           {Array.from({ length: 20 }).map((_, i) => (
@@ -148,36 +148,6 @@ export default function Home() {
           ))}
         </h2>
         <AccordionFeatures />
-      </section>
-
-      {/* Communauté */}
-      <section id="commencer" className="relative mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-24">
-        <h2 className="pillars-title mb-8 flex flex-nowrap items-baseline gap-3 text-3xl text-white sm:text-4xl md:mb-12 md:text-5xl">
-          <span className="shrink-0 font-thin tracking-tight">{t("communityTitlePrefix")}</span>
-          {Array.from({ length: 20 }).map((_, i) => (
-            <span
-              key={i}
-              className="pillars-repeat shrink-0 font-candal italic"
-              style={{ opacity: Math.max(0.02, 1 - i * 0.4) }}
-            >
-              {t("communityTitleWord")}
-            </span>
-          ))}
-        </h2>
-
-        <div className="flex flex-col items-start gap-6 md:flex-row md:items-end md:justify-between">
-          <p className="max-w-xl text-sm leading-6 text-white/60 sm:text-base">
-            {t("communityDescription")}
-          </p>
-
-          <BuyEbookButton className="hero-discord-cta community-discord-cta w-full justify-center md:w-auto">
-            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <rect x="5" y="11" width="14" height="9" rx="2.2" />
-              <path d="M8 11V7a4 4 0 0 1 8 0v4" strokeLinecap="round" />
-            </svg>
-            <span>{t("communityCta")}</span>
-          </BuyEbookButton>
-        </div>
       </section>
 
       {/* Footer */}
