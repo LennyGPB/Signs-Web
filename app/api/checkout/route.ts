@@ -20,6 +20,7 @@ export async function POST(request: NextRequest) {
   try {
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
+      allow_promotion_codes: true,
       locale: locale === "fr" ? "fr" : "en",
       // Managed Payments (activé par défaut) exige un tax_code produit qu'on ne gère pas ; on le désactive pour cette session.
       managed_payments: { enabled: false },
