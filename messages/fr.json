@@ -164,7 +164,20 @@
     "s8Body": "Toutes les données sont transmises via HTTPS. Les mots de passe sont hachés avec bcrypt. Nous ne vendons pas tes données personnelles à des tiers.",
     "s9Title": "9. Contact",
     "s9Body": "Pour toute question relative à la confidentialité :",
-    "copyright": "© {year} Signs. Tous droits réservés."
+    "copyright": "© {year} Signs. Tous droits réservés.",
+    "s2Item6Label": "Mesure d'audience",
+    "s2Item6": "écrans visités et actions clés dans l'application (ex. : rituel terminé, page d'abonnement affichée), associés à l'identifiant technique de ton compte. Nous n'envoyons ni ton e-mail, ni ton prénom, ni le contenu que tu écris",
+    "s3Item6": "Mesurer l'usage de l'application de façon pseudonyme pour l'améliorer (via PostHog, hébergé dans l'Union européenne)",
+    "s3Item7": "Lire ton affirmation à voix haute, si tu utilises cette fonctionnalité (via ElevenLabs)",
+    "s4Item7Label": "PostHog (Union européenne)",
+    "s4Item7": "mesure d'audience de l'application, hébergée dans l'UE. Aucune publicité, aucun suivi entre applications. Voir",
+    "s4Item7Link": "la politique de confidentialité de PostHog",
+    "s4Item8Label": "ElevenLabs",
+    "s4Item8": "génère la version audio de ton affirmation. Reçoit uniquement le texte à lire : ton affirmation, ta nouvelle croyance et, si tu l'as activé, ton prénom. Voir",
+    "s4Item8Link": "la politique de confidentialité d'ElevenLabs",
+    "s4Item9Label": "Cloudflare R2",
+    "s4Item9": "stockage privé des fichiers audio de tes affirmations, accessibles uniquement par des liens temporaires. Ils sont supprimés avec ton compte. Voir",
+    "s4Item9Link": "la politique de confidentialité de Cloudflare"
   },
   "Terms": {
     "metaTitle": "Conditions d'utilisation | Signs",

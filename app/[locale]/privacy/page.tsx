@@ -62,6 +62,7 @@ export default function PrivacyPage() {
               <li>• <span className="text-white">{t("s2Item3Label")}</span> — {t("s2Item3")}</li>
               <li>• <span className="text-white">{t("s2Item4Label")}</span> — {t("s2Item4")}</li>
               <li>• <span className="text-white">{t("s2Item5Label")}</span> — {t("s2Item5")}</li>
+              <li>• <span className="text-white">{t("s2Item6Label")}</span> — {t("s2Item6")}</li>
             </ul>
           </section>
 
@@ -73,6 +74,8 @@ export default function PrivacyPage() {
               <li>• {t("s3Item3")}</li>
               <li>• {t("s3Item4")}</li>
               <li>• {t("s3Item5")}</li>
+              <li>• {t("s3Item6")}</li>
+              <li>• {t("s3Item7")}</li>
             </ul>
           </section>
 
@@ -85,6 +88,9 @@ export default function PrivacyPage() {
               <li>• <span className="text-white">{t("s4Item4Label")}</span> — {t("s4Item4")}</li>
               <li>• <span className="text-white">{t("s4Item5Label")}</span> — {t("s4Item5")}</li>
               <li>• <span className="text-white">{t("s4Item6Label")}</span> — {t("s4Item6")} <a href="https://stripe.com/privacy" className="text-[#B8A5FF] underline">{t("s4Item6Link")}</a>.</li>
+              <li>• <span className="text-white">{t("s4Item7Label")}</span> — {t("s4Item7")} <a href="https://posthog.com/privacy" className="text-[#B8A5FF] underline">{t("s4Item7Link")}</a>.</li>
+              <li>• <span className="text-white">{t("s4Item8Label")}</span> — {t("s4Item8")} <a href="https://elevenlabs.io/privacy-policy" className="text-[#B8A5FF] underline">{t("s4Item8Link")}</a>.</li>
+              <li>• <span className="text-white">{t("s4Item9Label")}</span> — {t("s4Item9")} <a href="https://www.cloudflare.com/privacypolicy/" className="text-[#B8A5FF] underline">{t("s4Item9Link")}</a>.</li>
             </ul>
           </section>
 

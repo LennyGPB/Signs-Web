@@ -164,7 +164,20 @@
     "s8Body": "All data is transmitted over HTTPS. Passwords are hashed using bcrypt. We do not sell your personal data to third parties.",
     "s9Title": "9. Contact",
     "s9Body": "For any privacy-related questions:",
-    "copyright": "© {year} Signs. All rights reserved."
+    "copyright": "© {year} Signs. All rights reserved.",
+    "s2Item6Label": "Usage analytics",
+    "s2Item6": "screens visited and key actions in the app (e.g. ritual completed, subscription page shown), linked to your account's technical ID. We never send your email, your first name or the content you write",
+    "s3Item6": "Measure app usage under a pseudonym to improve it (via PostHog, hosted in the European Union)",
+    "s3Item7": "Read your affirmation aloud, if you use this feature (via ElevenLabs)",
+    "s4Item7Label": "PostHog (European Union)",
+    "s4Item7": "app usage analytics, hosted in the EU. No advertising, no cross-app tracking. See",
+    "s4Item7Link": "PostHog's privacy policy",
+    "s4Item8Label": "ElevenLabs",
+    "s4Item8": "generates the audio version of your affirmation. Only receives the text to read: your affirmation, your new belief and, if enabled, your first name. See",
+    "s4Item8Link": "ElevenLabs' privacy policy",
+    "s4Item9Label": "Cloudflare R2",
+    "s4Item9": "private storage for your affirmation audio files, only reachable through temporary links. They are deleted with your account. See",
+    "s4Item9Link": "Cloudflare's privacy policy"
   },
   "Terms": {
     "metaTitle": "Terms of Use | Signs",
